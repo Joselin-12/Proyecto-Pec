@@ -151,15 +151,3 @@ footer{
     transform: scale(1.05);
 }
 
-/*Sobre nosotros*/
- .frase{
-    text-align: center;
-    font-size: 22px;
-    color: #666;
-    margin-bottom: 40px;
-    font-style: italic;
-}
-
-.card:hover{
-    transform: translateY(-10px);
-}
