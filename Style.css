@@ -115,3 +115,38 @@ footer{
     text-align: center;
     padding: 20px;
 }
+
+
+
+
+
+
+.hero-content{
+    text-align: center;
+    color: white;
+}
+
+.facebook-btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 35px;
+
+    background: #1877F2;
+    color: white;
+
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+
+    border-radius: 15px;
+    border: 2px solid white;
+
+    transition: 0.3s ease;
+}
+
+.facebook-btn:hover{
+    background: white;
+    color: #1877F2;
+
+    transform: scale(1.05);
+}
