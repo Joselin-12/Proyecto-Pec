@@ -12,10 +12,6 @@ body{
 }
 
 header{
-    background: #0b6e6e;
-    padding: 15px 0;
-}
-header{
     background: rgba(0, 109, 109, 0.95);
     backdrop-filter: blur(10px);
     position: sticky;
@@ -47,6 +43,19 @@ nav ul li a{
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 22px;
+    position: relative;
+    transition: 0.3s;
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #ffd166;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
 }
 
 nav ul li a:hover{
@@ -54,7 +63,7 @@ nav ul li a:hover{
 }
 
 .hero-section{
-    height: 90vh;
+    height: 100vh;
 
     background:
     linear-gradient(rgba(0,0,0,0.5),
@@ -70,9 +79,44 @@ nav ul li a:hover{
 
     text-align: center;
     color: white;
+
+    animation: fondo 18s infinite;
+}
+@keyframes fondo{
+
+    0%{
+        background:
+        linear-gradient(rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url("grupo602.jpg");
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    50%{
+        background:
+        linear-gradient(rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url("grupo602.jpg");
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    100%{
+        background:
+        linear-gradient(rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url("maestros.jpeg");
+
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 .hero-content h1{
+    animation: aparecer 1.5s ease;
     font-size: 80px;
     color: white;
     margin-bottom: 20px;
@@ -142,27 +186,27 @@ footer{
 
 .facebook-btn{
     display: inline-block;
-    margin-top: 20px;
-    padding: 14px 35px;
+    margin-top: 35px;
+    padding: 16px 40px;
 
-    background: #1877F2;
+    background: linear-gradient(135deg,#1877F2,#0f5fd6);
+
     color: white;
-
     text-decoration: none;
+
     font-size: 22px;
     font-weight: bold;
 
-    border-radius: 15px;
-    border: 2px solid white;
+    border-radius: 50px;
 
-    transition: 0.3s ease;
+    transition: 0.4s;
+
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.25);
 }
-
 .facebook-btn:hover{
-    background: white;
-    color: #1877F2;
+    transform: translateY(-5px) scale(1.05);
 
-    transform: scale(1.05);
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.35);
 }
 
 
