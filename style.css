@@ -248,13 +248,30 @@ body{
 }
 .trabajos{
     margin-top: 80px;
+    background: linear-gradient(to bottom, #edf6f9, #d9f0ee);
+    padding: 80px 40px;
 }
 
-.trabajos h2{
-    font-size: 40px;
-    color: #004d4d;
-    margin-bottom: 40px;
+.trabajos h2
+{
+   
+    font-size: 55px;
+    color: #005f73;
+    margin-bottom: 50px;
+    position: relative;
+    font-weight: bold;
 }
+.trabajos h2::after{
+    content: "";
+    width: 120px;
+    height: 6px;
+    background: linear-gradient(90deg, #0a9396, #ee9b00);
+    display: block;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+
 .galeria{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -315,11 +332,59 @@ nav ul li a{
 
 /* CONTACTO */
 
-.contact-section{
-    padding: 80px 20px;
-    text-align: center;
+.contacto{
+    background: linear-gradient(to bottom, #edf6f9, #d8f3dc);
+    min-height: 100vh;
+    padding: 100px 50px;
+    position: relative;
+    overflow: hidden;
 }
 
+.contacto::before{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(0, 109, 119, 0.15);
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    filter: blur(100px);
+}
+
+.contacto::after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(238, 155, 0, 0.2);
+    border-radius: 50%;
+    bottom: -80px;
+    right: -80px;
+    filter: blur(100px);
+}
+
+.contacto h1{
+    font-size: 70px;
+    color: #005f73;
+    text-align: center;
+    margin-bottom: 80px;
+    font-weight: bold;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.info{
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 50px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    transition: 0.4s;
+}
+
+.info:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.18);
+}
 .contact-section h1{
     font-size: 70px;
     color: #005f5f;
@@ -347,10 +412,48 @@ nav ul li a{
     transition: 0.3s;
 }
 
+.card{
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    position: relative;
+}
+
+.card::before{
+    content: "";
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #0a9396, #ee9b00);
+}
+
+
+.card:hover{
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+}
+
+section{
+    background: linear-gradient(to bottom, #EDF6F9, #ffffff);
+}
+
 .contact-info:hover{
     transform: translateY(-10px);
 }
 
+.info::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #0a9396, #ee9b00);
+}
 /* INFO */
 
 .info-box{
@@ -366,6 +469,25 @@ nav ul li a{
 
 /* MAPA */
 
+.mapa iframe{
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.mapa iframe:hover{
+    transform: scale(1.02);
+}
+
+.contenedor-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
 .mapa{
     width: 550px;
     border-radius: 30px;
@@ -376,4 +498,49 @@ nav ul li a{
 
 .mapa:hover{
     transform: scale(1.02);
+}
+
+
+body{
+    background-color: #EDF6F9;
+}
+
+header{
+    background: linear-gradient(90deg, #006D77, #0A9396);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav a{
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #FFB703;
+}
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url(img/fondo.jpg);
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.info i{
+    color: #ee9b00;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.info::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #0a9396, #ee9b00);
 }
