@@ -16,7 +16,7 @@
         }
 
         body{
-            background: #f4f4f4;
+           linear-gradient(35deg, #e0f7f7, #ffffff, #d9f3f3);;
         }
 
         /* HEADER */
@@ -47,7 +47,7 @@
         }
 
         nav ul li a{
-            color: white;
+            color: rgba(244, 240, 240, 0.714);
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
@@ -55,19 +55,19 @@
         }
 
         nav ul li a:hover{
-            color: #c7f3ef;
+            color: #067d74;
         }
 
         /* SECCIÓN */
 
         .page-section{
-            width: 85%;
-            margin: 60px auto;
-            background: white;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
-        }
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #f8f4f5;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
 
         .subtitle{
             text-align: center;
@@ -79,10 +79,9 @@
         }
 
         .page-section h1{
-            text-align: center;
-            font-size: 55px;
-            color: #111;
-            margin-bottom: 40px;
+           color: #006d6d;
+    font-size: 55px;
+    margin-bottom: 10px;
         }
 
         .about-content{
@@ -107,11 +106,11 @@
         }
 
         .about-image{
-            width: 450px;
-            border-radius: 20px;
-            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
-            transition: 0.3s;
-        }
+    width: 500px;
+    border-radius: 25px;
+    border: 8px solid white;
+    box-shadow: 0 15px 30px rgba(0,0,0,.12);
+}
 
         .about-image:hover{
             transform: scale(1.03);
@@ -119,25 +118,21 @@
 
         /* TARJETAS */
 
-        .cards{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
-            margin-top: 50px;
-        }
-
         .card{
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
-            transition: 0.3s;
-            border-bottom: 5px solid #0d6b68;
-        }
+    background: white;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
 
         .card:hover{
-            transform: translateY(-5px);
+             transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
         }
 
         .card h2{
@@ -227,8 +222,10 @@
 
     <div class="cards">
 
+
         <div class="card">
-            <h2>Misión</h2>
+        
+             <h2>🎯 Misión</h2>
 
             <p>
                 Formar estudiantes competentes con educación de calidad,
@@ -237,7 +234,8 @@
         </div>
 
         <div class="card">
-            <h2>Visión</h2>
+          
+            <h2>🚀 Visión</h2>
 
             <p>
                 Ser una institución reconocida por su excelencia académica
@@ -246,7 +244,8 @@
         </div>
 
         <div class="card">
-            <h2>Valores</h2>
+            
+            <h2>🤝 Valores</h2>
 
             <p>
                 Responsabilidad, respeto, honestidad,
@@ -255,8 +254,8 @@
         </div>
 
         <div class="card">
-            <h2>Historia</h2>
-
+            
+<h2>📖 Historia</h2>
             <p>
                 Desde 1993 formando generaciones
                 con preparación académica y técnica.
@@ -264,6 +263,8 @@
         </div>
 
     </div>
+
+
 
 </section>
 
