@@ -689,3 +689,84 @@ nav a:hover{
     margin:10px auto;
     border-radius:10px;
 }
+
+
+.menu-toggle{
+    display: none;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        display:none;
+    }
+
+    nav.active{
+        display:block;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+        padding:20px 0;
+    }
+}
+
+
+
+nav ul{
+    gap:40px;
+}
+.logo img{
+    width:120px;
+}
+
+.menu-toggle{
+    display: none;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+
+    .container{
+        position: relative;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#0b6e6e;
+        box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    nav.active{
+        display:block;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+        padding:20px 0;
+    }
+
+    .logo img{
+        width:70px;
+    }
+}
