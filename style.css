@@ -548,6 +548,7 @@ nav a:hover{
 
 
 
+<<<<<<< HEAD
 sobre nosotros
 .page-section{
     max-width: 1300px;
@@ -644,3 +645,146 @@ sobre nosotros
 
 
 
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-section{
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-section::before{
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: rgba(0,109,109,0.08);
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+}
+
+.contact-section::after{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(0,109,109,0.05);
+    border-radius: 50%;
+    bottom: -80px;
+    right: -80px;
+}
+
+
+.contact-section h1{
+    position: relative;
+    display: inline-block;
+}
+
+.contact-section h1::after{
+    content: "";
+    width: 120px;
+    height: 5px;
+    background: #0b6e6e;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    border-radius: 10px;
+}
+
+.contact-info{
+    transition: .4s;
+}
+
+.contact-info:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.map-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#0b6e6e;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.map-btn:hover{
+    background:#0d8c8c;
+    transform:translateY(-3px);
+}
+
+
+.contact-info h2{
+    color: #006d6d;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.info-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background: #f7fafa;
+    padding: 18px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+
+    transition: .3s;
+}
+.info-box:hover{
+    background: #eef9f9;
+    transform: translateX(8px);
+}
+
+.info-box span{
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #006d6d;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 24px;
+}
+.contact-info h2::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#006d6d;
+    margin:10px auto;
+    border-radius:10px;
+}
+>>>>>>> 534c437b74aa10cfe2c857d3f514e5f69e185a49
