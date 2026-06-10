@@ -385,6 +385,29 @@ nav ul li a{
     transform: translateY(-10px);
     box-shadow: 0 20px 45px rgba(0,0,0,0.18);
 }
+
+.contact-section{
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.contact-section h1{
+    font-size: 70px;
+    color: #005f5f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-section h1::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:5px;
+    background:#0b6e6e;
+    margin:15px auto 0;
+    border-radius:10px;
+}
+
 .contact-section h1{
     font-size: 70px;
     color: #005f5f;
@@ -845,6 +868,7 @@ nav ul{
         width:70px;
     }
 }
+
 
 
 
