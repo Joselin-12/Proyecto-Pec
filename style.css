@@ -995,27 +995,32 @@ nav ul{
 }
 
 
-.menu-superior{
+
+
+nav{
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 20px 40px;
+    padding: 25px 50px;
 }
 
-.menu-superior ul{
+nav ul{
     list-style: none;
 }
 
-.menu-superior a{
+nav a{
     text-decoration: none;
     background: #006d6d;
     color: white;
     padding: 12px 25px;
     border-radius: 30px;
     font-weight: bold;
-    transition: 0.3s;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    transition: .3s;
 }
 
-.menu-superior a:hover{
+nav a:hover{
     background: #0a9396;
+    transform: translateY(-3px);
 }
-
